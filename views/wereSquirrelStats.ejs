@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>WereSquirrel Stats</h1>
+
+      <% for (var j = 0; j < squirrels.length; j++) { %>
+    <h1><%= colonies[j].name %></h1>
+        <h3>WereSquirrel: <%= squirrels[j].name %></h3>
+       
+        <table>
+          <th>Garlic</th>
+          <th>Meat<th>
+
+
+             <% for(var i = 0; i < squirrels[j].duels.length; i++){ %>
+             <tr>
+                <td><%= squirrels[j].duels[i].garlic %></td>
+                <td><%= squirrels[j].duels[i].meat %></td>
+             </tr>
+              <% } %>
+          
+        </table>
+   <% } %>
+
+
+     
+
+
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Colonies</h1>
+
+    <table>
+        <% for (var i = 0; i < colonies.length; i++) { %>
+      <tr>
+          <td><a href='/colony/<%= colonies[i]._id %>'><%= colonies[i].name %>:</a><td> Wins: <%= wins[i] %></td>
+      </tr>
+              <% } %> 
+    </table>
+    <h2><a href='/createDuel'>Create a duel</a></h2>
+
+   
+
+
+     
+
+
+
+  </body>
+</html>

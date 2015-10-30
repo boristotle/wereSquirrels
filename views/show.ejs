@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>The Colony Name</h1>
+     <% bears.forEach(function(bear){ %> 
+        <h3>UniBear: <%= bear.name %></h3>
+           <% }) %>
+
+   <% squirrels.forEach(function(squirrel){ %>
+        <h1>WereSquirrel Name: <a href='/wereSquirrelStats'><%= squirrel.name %></a></h1>
+       
+        <table>
+          <th>Garlic</th>
+          <th>Meat<th>
+
+
+             <% for(var i = 0; i < squirrel.duels.length; i++){ %>
+             <tr>
+                <td><%= squirrel.duels[i].garlic %></td>
+                <td><%= squirrel.duels[i].meat %></td>
+             </tr>
+              <% } %>
+          
+        </table>
+   <% }) %>
+
+
+     
+
+
+
+  </body>
+</html>
