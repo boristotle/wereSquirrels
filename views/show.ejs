@@ -5,13 +5,14 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <p><a href='/'>HOME</a>  &nbsp;&nbsp;&nbsp;  <a href='/wereSquirrelStats'>SQUIRREL STATS</a></p>
     <h1>The Colony Name</h1>
      <% bears.forEach(function(bear){ %> 
         <h3>UniBear: <%= bear.name %></h3>
            <% }) %>
 
    <% squirrels.forEach(function(squirrel){ %>
-        <h1>WereSquirrel Name: <a href='/wereSquirrelStats'><%= squirrel.name %></a></h1>
+        <h1>WereSquirrel Name: <%= squirrel.name %></h1>
        
         <table>
           <th>Garlic</th>
